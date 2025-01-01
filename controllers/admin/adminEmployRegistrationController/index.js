@@ -195,7 +195,6 @@ const registration = catchAsync(async (req, res, next) => {
     VALUES (
       @empCode, @empName, @birthDate, @gender, @education, @presentAdd, @permanentAdd,
       @experience, @mobileNo, @alternetNo, @emailAdd, @joinDate, 
-      CASE WHEN @resignDate IS NULL THEN NULL ELSE @resignDate END,  
       @paidLeave, @panNo, @panPhoto, @aadharFront, @aadharBack, 
       @aadharNo, @residentProof, @userName, @userPassword, @empPhoto
     );
